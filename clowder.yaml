@@ -50,7 +50,7 @@ groups:
         - name: apple/example-package-playingcard
           path: examples/example-package-playingcard
         - name: apple/example-package-fisheryates
-          path: pexamples/example-package-fisheryates
+          path: examples/example-package-fisheryates
     - name: misc
       projects:
         - name: apple/swift-cmark
