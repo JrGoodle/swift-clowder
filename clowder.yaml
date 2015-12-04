@@ -18,12 +18,15 @@ groups:
           path: swift-evolution
         - name: apple/swift-llvm
           path: swift-llvm
+          ref: refs/heads/stable
         - name: apple/swift-3-api-guidelines-review
           path: swift-3-api-guidelines-review
+          ref: refs/heads/swift-3
         - name: apple/swift-lldb
           path: swift-lldb
         - name: apple/swift-clang
           path: swift-clang
+          ref: refs/heads/stable
     - name: swift-corelibs
       projects:
         - name: apple/swift-corelibs-foundation
