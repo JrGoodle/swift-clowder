@@ -25,32 +25,32 @@ groups:
           path: llvm
           ref: refs/heads/stable
         - name: apple/swift-clang
-          path: llvm/tools/clang
+          path: clang
           ref: refs/heads/stable
         - name: apple/swift-lldb
           path: lldb
     - name: swift-corelibs
       projects:
         - name: apple/swift-corelibs-foundation
-          path: corelibs/swift-corelibs-foundation
+          path: swift-corelibs-foundation
         - name: apple/swift-corelibs-xctest
-          path: corelibs/swift-corelibs-xctest
+          path: swift-corelibs-xctest
         - name: apple/swift-corelibs-libdispatch
-          path: corelibs/swift-corelibs-libdispatch
+          path: swift-corelibs-libdispatch
     - name: swift-package-manager
       projects:
         - name: apple/swift-package-manager
-          path: package-manager/swift-package-manager
+          path: swiftpm
         - name: apple/swift-llbuild
-          path: package-manager/swift-llbuild
+          path: llbuild
         - name: apple/example-package-dealer
-          path: package-manager/example-package-dealer
+          path: examples/example-package-dealer
         - name: apple/example-package-deckofplayingcards
-          path: package-manager/example-package-deckofplayingcards
+          path: examples/example-package-deckofplayingcards
         - name: apple/example-package-playingcard
-          path: package-manager/example-package-playingcard
+          path: examples/example-package-playingcard
         - name: apple/example-package-fisheryates
-          path: package-manager/example-package-fisheryates
+          path: pexamples/example-package-fisheryates
     - name: misc
       projects:
         - name: apple/swift-cmark
