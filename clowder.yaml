@@ -14,6 +14,10 @@ groups:
       projects:
         - name: apple/swift
           path: swift
+          remote: upstream
+        - name: JrGoodle/swift
+          path: swift
+          remote: origin
         - name: apple/swift-evolution
           path: swift-evolution
         - name: apple/swift-3-api-guidelines-review
