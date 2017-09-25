@@ -15,14 +15,9 @@ groups:
         - name: apple/swift
           path: swift
           remote: upstream
-        - name: JrGoodle/swift
-          path: swift
-          remote: origin
-        - name: apple/swift-evolution
-          path: swift-evolution
-        - name: apple/swift-3-api-guidelines-review
-          path: swift-3-api-guidelines-review
-          ref: refs/heads/swift-3
+          fork:
+              name: JrGoodle/swift
+              remote: origin
     - name: llvm
       projects:
         - name: apple/swift-llvm
@@ -31,31 +26,34 @@ groups:
         - name: apple/swift-clang
           path: clang
           ref: refs/heads/stable
+        - name: apple/swift-compiler-rt
+          path: compiler-rt
+          ref: refs/heads/stable
         - name: apple/swift-lldb
           path: lldb
+          ref: refs/heads/stable
     - name: swift-corelibs
       projects:
         - name: apple/swift-corelibs-foundation
           path: swift-corelibs-foundation
-        - name: apple/swift-corelibs-xctest
-          path: swift-corelibs-xctest
         - name: apple/swift-corelibs-libdispatch
           path: swift-corelibs-libdispatch
+        - name: apple/swift-corelibs-xctest
+          path: swift-corelibs-xctest
+        - name: apple/swift-integration-tests
+          path: swift-integration-tests
+        - name: apple/swift-xcode-playground-support
+          path: swift-xcode-playground-support
     - name: swift-package-manager
       projects:
         - name: apple/swift-package-manager
           path: swiftpm
         - name: apple/swift-llbuild
           path: llbuild
-        - name: apple/example-package-dealer
-          path: examples/example-package-dealer
-        - name: apple/example-package-deckofplayingcards
-          path: examples/example-package-deckofplayingcards
-        - name: apple/example-package-playingcard
-          path: examples/example-package-playingcard
-        - name: apple/example-package-fisheryates
-          path: examples/example-package-fisheryates
-    - name: misc
+    - name: third-party
       projects:
         - name: apple/swift-cmark
           path: cmark
+        - name: ninja-build/ninja
+          path: ninja
+          ref: refs/heads/release
