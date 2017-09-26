@@ -1,0 +1,5 @@
+import: default
+
+defaults:
+    source: github-https
+    depth: 10
