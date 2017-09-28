@@ -19,19 +19,16 @@ groups:
               name: JrGoodle/swift
               remote: origin
     - name: llvm
+      ref: refs/heads/stable
       projects:
         - name: apple/swift-llvm
           path: llvm
-          ref: refs/heads/stable
         - name: apple/swift-clang
           path: clang
-          ref: refs/heads/stable
         - name: apple/swift-compiler-rt
           path: compiler-rt
-          ref: refs/heads/stable
         - name: apple/swift-lldb
           path: lldb
-          ref: refs/heads/stable
     - name: swift-corelibs
       projects:
         - name: apple/swift-corelibs-foundation
