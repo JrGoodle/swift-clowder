@@ -1,0 +1,57 @@
+defaults:
+    ref: refs/heads/master
+    remote: origin
+    source: github
+
+sources:
+    - name: github
+      url: ssh://git@github.com
+    - name: github-https
+      url: https://github.com
+
+groups:
+    - name: swift
+      projects:
+        - name: apple/swift
+          path: swift
+          ref: master-next
+          remote: upstream
+          fork:
+              name: JrGoodle/swift
+              remote: origin
+    - name: llvm
+      ref: refs/heads/upstream-with-swift
+      projects:
+        - name: apple/swift-llvm
+          path: llvm
+        - name: apple/swift-clang
+          path: clang
+        - name: apple/swift-compiler-rt
+          path: compiler-rt
+        - name: apple/swift-lldb
+          path: lldb
+    - name: swift-corelibs
+      projects:
+        - name: apple/swift-corelibs-foundation
+          path: swift-corelibs-foundation
+        - name: apple/swift-corelibs-libdispatch
+          path: swift-corelibs-libdispatch
+        - name: apple/swift-corelibs-xctest
+          path: swift-corelibs-xctest
+        - name: apple/swift-integration-tests
+          path: swift-integration-tests
+        - name: apple/swift-xcode-playground-support
+          path: swift-xcode-playground-support
+    - name: swift-package-manager
+      projects:
+        - name: apple/swift-package-manager
+          path: swiftpm
+        - name: apple/swift-llbuild
+          path: llbuild
+    - name: third-party
+      projects:
+        - name: apple/swift-cmark
+          path: cmark
+        - name: ninja-build/ninja
+          path: ninja
+          ref: refs/heads/release
