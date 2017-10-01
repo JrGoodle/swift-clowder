@@ -1,0 +1,10 @@
+import: default
+
+groups:
+    - name: swift
+      projects:
+        - name: apple/swift
+          remote: upstream
+          fork:
+              name: JrGoodle/swift
+              remote: origin

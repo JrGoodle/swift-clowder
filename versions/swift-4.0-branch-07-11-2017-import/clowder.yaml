@@ -1,0 +1,6 @@
+defaults:
+    ref: refs/heads/swift-4.0-branch
+
+groups:
+    - name: llvm
+      ref: swift-4.0-branch-07-11-2017
