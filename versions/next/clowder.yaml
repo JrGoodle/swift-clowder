@@ -15,10 +15,6 @@ groups:
         - name: apple/swift
           path: swift
           ref: master-next
-          remote: upstream
-          fork:
-              name: JrGoodle/swift
-              remote: origin
     - name: llvm
       ref: refs/heads/upstream-with-swift
       projects:
