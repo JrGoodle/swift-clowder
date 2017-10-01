@@ -11,6 +11,7 @@ sources:
 
 groups:
     - name: swift
+      ref: refs/heads/swift-4.0-branch-07-11-2017
       projects:
         - name: apple/swift
           path: swift
