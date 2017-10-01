@@ -1,7 +1,7 @@
 defaults:
     ref: refs/heads/swift-4.0-branch
     remote: origin
-    source: github
+    source: github-https
 
 sources:
     - name: github

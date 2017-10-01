@@ -1,0 +1,14 @@
+import: default
+
+defaults:
+    source: github-https
+    depth: 10
+
+groups:
+    - name: swift
+      projects:
+        - name: apple/swift
+          remote: upstream
+          fork:
+              name: JrGoodle/swift
+              remote: origin

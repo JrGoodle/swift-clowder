@@ -1,5 +1,8 @@
 import: default
 
+defaults:
+    source: github-https
+
 groups:
     - name: swift
       ref: master-next

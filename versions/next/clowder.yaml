@@ -1,7 +1,7 @@
 defaults:
     ref: refs/heads/master
     remote: origin
-    source: github
+    source: github-https
 
 sources:
     - name: github

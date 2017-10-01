@@ -1,7 +1,7 @@
 defaults:
     ref: refs/heads/swift-3.1-branch
     remote: origin
-    source: github
+    source: github-https
 
 sources:
     - name: github

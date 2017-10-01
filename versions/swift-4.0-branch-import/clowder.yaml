@@ -2,6 +2,7 @@ import: default
 
 defaults:
     ref: refs/heads/swift-4.0-branch
+    source: github-https
 
 groups:
     - name: llvm

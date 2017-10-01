@@ -1,4 +1,4 @@
-import: jrgoodle-fork
+import: default
 
 defaults:
     source: github-https
