@@ -14,7 +14,7 @@ groups:
       projects:
         - name: apple/swift
           path: swift
-          ref: master-next
+          ref: refs/heads/master-next
     - name: llvm
       ref: refs/heads/upstream-with-swift
       projects:

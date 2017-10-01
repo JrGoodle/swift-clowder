@@ -5,6 +5,6 @@ defaults:
 
 groups:
     - name: swift
-      ref: master-next
+      ref: refs/heads/master-next
     - name: llvm
       ref: refs/heads/upstream-with-swift
