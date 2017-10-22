@@ -1,5 +1,5 @@
 defaults:
-    ref: refs/heads/master
+    ref: refs/heads/swift-4.0-branch
     remote: origin
     source: github-https
 
@@ -15,7 +15,6 @@ groups:
         - name: apple/swift
           path: swift
     - name: llvm
-      ref: refs/heads/stable
       projects:
         - name: apple/swift-llvm
           path: llvm
