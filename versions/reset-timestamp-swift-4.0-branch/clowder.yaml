@@ -2,6 +2,7 @@ defaults:
     ref: refs/heads/swift-4.0-branch
     remote: origin
     source: github-https
+    timestamp_author: swift-ci
 
 sources:
     - name: github
@@ -18,15 +19,12 @@ groups:
       projects:
         - name: apple/swift-llvm
           path: llvm
-          timestamp_author: swift-ci
         - name: apple/swift-clang
           path: clang
-          timestamp_author: swift-ci
         - name: apple/swift-compiler-rt
           path: compiler-rt
         - name: apple/swift-lldb
           path: lldb
-          timestamp_author: swift-ci
     - name: swift-corelibs
       projects:
         - name: apple/swift-corelibs-foundation
