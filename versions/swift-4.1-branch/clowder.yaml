@@ -1,4 +1,4 @@
-import default
+import: default
 
 defaults:
     ref: refs/heads/swift-4.1-branch

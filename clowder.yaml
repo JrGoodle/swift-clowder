@@ -2,13 +2,12 @@ defaults:
     ref: refs/heads/master
     remote: origin
     source: github
+    protocol: ssh
     recursive: true
 
 sources:
     - name: github
-      url: ssh://git@github.com
-    - name: github-https
-      url: https://github.com
+      url: github.com
 
 groups:
     - name: swift
