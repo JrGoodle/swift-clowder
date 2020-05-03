@@ -1,7 +1,7 @@
 import: default
 
-groups:
-    - name: swift
-      ref: refs/heads/master-next
-    - name: llvm
-      ref: refs/heads/upstream-with-swift
+projects:
+  - name: swift
+    ref: refs/heads/master-next
+  - name: llvm
+    ref: refs/heads/upstream-with-swift

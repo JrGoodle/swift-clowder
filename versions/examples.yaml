@@ -1,13 +1,15 @@
 import: default
 
-groups:
-    - name: examples
-      projects:
-        - name: apple/example-package-dealer
-          path: examples/example-package-dealer
-        - name: apple/example-package-deckofplayingcards
-          path: examples/example-package-deckofplayingcards
-        - name: apple/example-package-playingcard
-          path: examples/example-package-playingcard
-        - name: apple/example-package-fisheryates
-          path: examples/example-package-fisheryates
+projects:
+  - name: apple/example-package-dealer
+    path: examples/example-package-dealer
+    groups: [examples]
+  - name: apple/example-package-deckofplayingcards
+    path: examples/example-package-deckofplayingcards
+    groups: [examples]
+  - name: apple/example-package-playingcard
+    path: examples/example-package-playingcard
+    groups: [examples]
+  - name: apple/example-package-fisheryates
+    path: examples/example-package-fisheryates
+    groups: [examples]
