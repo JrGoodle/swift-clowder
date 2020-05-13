@@ -1,4 +1,5 @@
 defaults:
+  ref: refs/heads/swift-5.2-branch
   source: github
   protocol: ssh
   recursive: true
@@ -14,11 +15,6 @@ projects:
     path: cmark
   - name: apple/swift-llbuild
     path: llbuild
-  - name: apple/swift-argument-parser
-    path: swift-argument-parser
-    tag: '0.0.5'
-  - name: apple/swift-driver
-    path: driver
   - name: apple/swift-tools-support-core
     path: swift-tools-support-core
   - name: apple/swift-package-manager
@@ -39,28 +35,21 @@ projects:
     path: swift-xcode-playground-support
   - name: ninja-build/ninja
     path: ninja
-    branch: release
+    ref: refs/heads/release
   - name: unicode-org/icu
     path: icu
-    tag: release-65-1
+    ref: refs/tags/release-65-1
     groups: [linux, notdefault]
-  - name: jpsim/Yams
-    path: yams
-    tag: '3.0.1'
   - name: KitWare/CMake
     path: cmake
-    tag: v3.16.5
+    ref: refs/tags/v3.16.5
     groups: [linux, notdefault]
-  - name: pvieito/PythonKit
-    path: pythonkit
-  - name: tensorflow/swift-apis
-    path: tensorflow-swift-apis
   - name: apple/indexstore-db
     path: indexstore-db
   - name: apple/sourcekit-lsp
     path: sourcekit-lsp
   - name: apple/swift-format
     path: swift-format
+    ref: refs/heads/master
   - name: apple/llvm-project
     path: llvm-project
-    branch: swift/master
