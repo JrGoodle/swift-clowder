@@ -10,34 +10,23 @@ sources:
 
 projects:
   - name: apple/swift
-    path: swift
   - name: apple/swift-cmark
     path: cmark
   - name: apple/swift-llbuild
     path: llbuild
   - name: apple/swift-tools-support-core
-    path: swift-tools-support-core
   - name: apple/swift-package-manager
     path: swiftpm
   - name: apple/swift-syntax
-    path: swift-syntax
   - name: apple/swift-stress-tester
-    path: swift-stress-tester
   - name: apple/swift-corelibs-xctest
-    path: swift-corelibs-xctest
   - name: apple/swift-corelibs-foundation
-    path: swift-corelibs-foundation
   - name: apple/swift-corelibs-libdispatch
-    path: swift-corelibs-libdispatch
   - name: apple/swift-integration-tests
-    path: swift-integration-tests
   - name: apple/swift-xcode-playground-support
-    path: swift-xcode-playground-support
   - name: ninja-build/ninja
-    path: ninja
     branch: release
   - name: unicode-org/icu
-    path: icu
     tag: release-65-1
     groups: [linux, notdefault]
   - name: KitWare/CMake
@@ -45,11 +34,7 @@ projects:
     tag: v3.16.5
     groups: [linux, notdefault]
   - name: apple/indexstore-db
-    path: indexstore-db
   - name: apple/sourcekit-lsp
-    path: sourcekit-lsp
   - name: apple/swift-format
-    path: swift-format
     branch: master
   - name: apple/llvm-project
-    path: llvm-project
