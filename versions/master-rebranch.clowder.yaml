@@ -1,7 +1,6 @@
 defaults:
   source: github
   protocol: ssh
-  branch: swift-3.1-branch
 
 sources:
   - name: github
@@ -12,20 +11,20 @@ projects:
     remote: upstream
     fork:
       name: apple/llvm-project
-      branch: swift/swift-3.1-branch
+      branch: swift/master-rebranch
   - name: apple/swift
+    branch: master-rebranch
   - name: commonmark/cmark
     remote: upstream
     fork:
       name: apple/swift-cmark
   - name: apple/swift-llbuild
     path: llbuild
+  - name: swift-tools-support-core
   - name: apple/swift-package-manager
     path: swiftpm
   - name: apple/swift-syntax
-    branch: master
   - name: apple/swift-stress-tester
-    branch: master
   - name: apple/swift-corelibs-xctest
   - name: apple/swift-corelibs-foundation
   - name: apple/swift-corelibs-libdispatch
@@ -33,9 +32,14 @@ projects:
   - name: apple/swift-xcode-playground-support
   - name: ninja-build/ninja
     branch: release
+  - name: unicode-org/icu
+    tag: release-65-1
+    groups: [linux, notdefault]
+  - name: KitWare/CMake
+    path: cmake
+    tag: v3.16.5
+    groups: [linux, notdefault]
   - name: apple/indexstore-db
-    branch: master
   - name: apple/sourcekit-lsp
-    branch: master
   - name: apple/swift-format
     branch: master

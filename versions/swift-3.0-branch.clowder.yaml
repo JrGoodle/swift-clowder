@@ -1,8 +1,41 @@
-import: default
-
 defaults:
+  source: github
+  protocol: ssh
   branch: swift-3.0-branch
 
+sources:
+  - name: github
+    url: github.com
+
 projects:
-  - name: llvm
-    branch: swift-3.0-branch
+  - name: llvm/llvm-project
+    remote: upstream
+    fork:
+      name: apple/llvm-project
+      branch: swift/swift-3.0-branch
+  - name: apple/swift
+  - name: commonmark/cmark
+    remote: upstream
+    fork:
+      name: apple/swift-cmark
+  - name: apple/swift-llbuild
+    path: llbuild
+  - name: apple/swift-package-manager
+    path: swiftpm
+  - name: apple/swift-syntax
+    branch: master
+  - name: apple/swift-stress-tester
+    branch: master
+  - name: apple/swift-corelibs-xctest
+  - name: apple/swift-corelibs-foundation
+  - name: apple/swift-corelibs-libdispatch
+  - name: apple/swift-integration-tests
+  - name: apple/swift-xcode-playground-support
+  - name: ninja-build/ninja
+    branch: release
+  - name: apple/indexstore-db
+    branch: master
+  - name: apple/sourcekit-lsp
+    branch: master
+  - name: apple/swift-format
+    branch: master

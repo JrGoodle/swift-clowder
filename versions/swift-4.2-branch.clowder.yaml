@@ -1,7 +1,7 @@
 defaults:
   source: github
   protocol: ssh
-  branch: swift-3.1-branch
+  branch: swift-4.2-branch
 
 sources:
   - name: github
@@ -12,7 +12,7 @@ projects:
     remote: upstream
     fork:
       name: apple/llvm-project
-      branch: swift/swift-3.1-branch
+      branch: swift/swift-4.2-branch
   - name: apple/swift
   - name: commonmark/cmark
     remote: upstream
@@ -23,7 +23,6 @@ projects:
   - name: apple/swift-package-manager
     path: swiftpm
   - name: apple/swift-syntax
-    branch: master
   - name: apple/swift-stress-tester
     branch: master
   - name: apple/swift-corelibs-xctest

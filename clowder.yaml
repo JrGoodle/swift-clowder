@@ -1,13 +1,17 @@
 defaults:
   source: github
   protocol: ssh
-  recursive: true
 
 sources:
   - name: github
     url: github.com
 
 projects:
+  - name: llvm/llvm-project
+    remote: upstream
+    fork:
+      name: apple/llvm-project
+      branch: swift/master
   - name: apple/swift
   - name: commonmark/cmark
     remote: upstream
@@ -15,13 +19,12 @@ projects:
       name: apple/swift-cmark
   - name: apple/swift-llbuild
     path: llbuild
-  - name: apple/swift-argument-parser
-    tag: '0.0.5'
-  - name: apple/swift-driver
-    path: driver
   - name: apple/swift-tools-support-core
   - name: apple/swift-package-manager
     path: swiftpm
+  - name: apple/swift-argument-parser
+    tag: '0.0.5'
+  - name: apple/swift-driver
   - name: apple/swift-syntax
   - name: apple/swift-stress-tester
   - name: apple/swift-corelibs-xctest
@@ -41,15 +44,10 @@ projects:
     path: cmake
     tag: v3.16.5
     groups: [linux, notdefault]
+  - name: apple/indexstore-db
+  - name: apple/sourcekit-lsp
+  - name: apple/swift-format
   - name: pvieito/PythonKit
     path: pythonkit
   - name: tensorflow/swift-apis
     path: tensorflow-swift-apis
-  - name: apple/indexstore-db
-  - name: apple/sourcekit-lsp
-  - name: apple/swift-format
-  - name: llvm/llvm-project
-    remote: upstream
-    fork:
-      name: apple/llvm-project
-      branch: swift/master

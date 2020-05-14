@@ -1,20 +1,26 @@
 defaults:
-  branch: swift-5.2-branch
   source: github
   protocol: ssh
-  recursive: true
+  branch: swift-5.2-branch
 
 sources:
   - name: github
     url: github.com
 
 projects:
+  - name: llvm/llvm-project
+    remote: upstream
+    fork:
+      name: apple/llvm-project
+      branch: swift/swift-5.2-branch
   - name: apple/swift
-  - name: apple/swift-cmark
-    path: cmark
+  - name: commonmark/cmark
+    remote: upstream
+    fork:
+      name: apple/swift-cmark
   - name: apple/swift-llbuild
     path: llbuild
-  - name: apple/swift-tools-support-core
+  - name: swift-tools-support-core
   - name: apple/swift-package-manager
     path: swiftpm
   - name: apple/swift-syntax
@@ -37,4 +43,3 @@ projects:
   - name: apple/sourcekit-lsp
   - name: apple/swift-format
     branch: master
-  - name: apple/llvm-project
