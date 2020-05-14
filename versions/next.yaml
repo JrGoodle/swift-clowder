@@ -2,6 +2,6 @@ import: default
 
 projects:
   - name: swift
-    ref: refs/heads/master-next
+    branch: master-next
   - name: llvm
-    ref: refs/heads/upstream-with-swift
+    branch: upstream-with-swift

@@ -1,10 +1,10 @@
 import: default
 
 defaults:
-  ref: refs/heads/swift-4.0-branch
+  branch: swift-4.0-branch
 
 projects:
   - name: swift
-    ref: refs/heads/swift-4.0-branch-07-11-2017
+    branch: swift-4.0-branch-07-11-2017
   - name: llvm
-    ref: refs/heads/swift-4.0-branch-07-11-2017
+    branch: swift-4.0-branch-07-11-2017

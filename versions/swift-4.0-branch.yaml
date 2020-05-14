@@ -1,8 +1,8 @@
 import: default
 
 defaults:
-  ref: refs/heads/swift-4.0-branch
+  branch: swift-4.0-branch
 
 projects:
   - name: llvm
-    ref: refs/heads/swift-4.0-branch
+    branch: swift-4.0-branch

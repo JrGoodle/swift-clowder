@@ -1,5 +1,5 @@
 defaults:
-  ref: refs/heads/swift-5.2-branch
+  branch: swift-5.2-branch
   source: github
   protocol: ssh
   recursive: true
@@ -35,14 +35,14 @@ projects:
     path: swift-xcode-playground-support
   - name: ninja-build/ninja
     path: ninja
-    ref: refs/heads/release
+    branch: release
   - name: unicode-org/icu
     path: icu
-    ref: refs/tags/release-65-1
+    tag: release-65-1
     groups: [linux, notdefault]
   - name: KitWare/CMake
     path: cmake
-    ref: refs/tags/v3.16.5
+    tag: v3.16.5
     groups: [linux, notdefault]
   - name: apple/indexstore-db
     path: indexstore-db
@@ -50,6 +50,6 @@ projects:
     path: sourcekit-lsp
   - name: apple/swift-format
     path: swift-format
-    ref: refs/heads/master
+    branch: master
   - name: apple/llvm-project
     path: llvm-project
