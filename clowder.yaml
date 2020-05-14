@@ -9,8 +9,10 @@ sources:
 
 projects:
   - name: apple/swift
-  - name: apple/swift-cmark
-    path: cmark
+  - name: commonmark/cmark
+    remote: upstream
+    fork:
+      name: apple/swift-cmark
   - name: apple/swift-llbuild
     path: llbuild
   - name: apple/swift-argument-parser
@@ -46,5 +48,8 @@ projects:
   - name: apple/indexstore-db
   - name: apple/sourcekit-lsp
   - name: apple/swift-format
-  - name: apple/llvm-project
-    branch: swift/master
+  - name: llvm/llvm-project
+    remote: upstream
+    fork:
+      name: apple/llvm-project
+      branch: swift/master
