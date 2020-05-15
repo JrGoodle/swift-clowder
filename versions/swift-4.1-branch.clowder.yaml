@@ -1,6 +1,7 @@
 defaults:
   source: github
   protocol: ssh
+  recursive: true
   branch: swift-4.1-branch
 
 sources:

@@ -1,6 +1,7 @@
 defaults:
   source: github
   protocol: ssh
+  recursive: true
 
 sources:
   - name: github
