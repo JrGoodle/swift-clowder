@@ -1,3 +1,5 @@
+name: swift-5.2
+
 defaults:
   source: github
   protocol: ssh

@@ -1,3 +1,5 @@
+name: swift-master-rebranch
+
 defaults:
   source: github
   protocol: ssh
