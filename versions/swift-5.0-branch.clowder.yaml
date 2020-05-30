@@ -3,8 +3,9 @@ name: swift-5.0
 defaults:
   source: github
   protocol: ssh
-  recursive: true
   branch: swift-5.0-branch
+  git:
+    recursive: true
 
 sources:
   - name: github

@@ -3,8 +3,9 @@ name: swift-4.2
 defaults:
   source: github
   protocol: ssh
-  recursive: true
   branch: swift-4.2-branch
+  git:
+    recursive: true
 
 sources:
   - name: github

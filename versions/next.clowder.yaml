@@ -3,7 +3,8 @@ name: swift-next
 defaults:
   source: github
   protocol: ssh
-  recursive: true
+  git:
+    recursive: true
 
 sources:
   - name: github
