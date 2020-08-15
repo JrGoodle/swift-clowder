@@ -1,15 +1,9 @@
 name: swift-4.1
 
 defaults:
-  source: github
-  protocol: ssh
   branch: swift-4.1-branch
   git:
     recursive: true
-
-sources:
-  - name: github
-    url: github.com
 
 projects:
   - name: llvm/llvm-project

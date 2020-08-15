@@ -1,14 +1,9 @@
 name: swift-master
 
 defaults:
-  source: github
   protocol: https
   git:
     recursive: true
-
-sources:
-  - name: github
-    url: github.com
 
 projects:
   - name: llvm/llvm-project
