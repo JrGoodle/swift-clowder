@@ -2,20 +2,18 @@ name: swift-next
 
 defaults:
   git:
-    recursive: true
+    submodules: true
 
-projects:
-  - name: llvm/llvm-project
-    remote: upstream
-    fork:
-      name: apple/llvm-project
-      branch: swift/master-next
+clowder:
+  - name: apple/llvm-project
+    branch: swift/master-next
+    upstream:
+      name: llvm/llvm-project
   - name: apple/swift
     branch: master-next
-  - name: commonmark/cmark
-    remote: upstream
-    fork:
-      name: apple/swift-cmark
+  - name: apple/swift-cmark
+    upstream:
+      name: commonmark/cmark
   - name: apple/swift-llbuild
     path: llbuild
   - name: apple/swift-tools-support-core

@@ -3,19 +3,17 @@ name: swift-5.3
 defaults:
   branch: release/5.3
   git:
-    recursive: true
+    submodules: true
 
-projects:
-  - name: llvm/llvm-project
-    remote: upstream
-    fork:
-      name: apple/llvm-project
-      branch: swift/release/5.3
+clowder:
+  - name: apple/llvm-project
+    branch: swift/release/5.3
+    upstream:
+      name: llvm/llvm-project
   - name: apple/swift
-  - name: commonmark/cmark
-    remote: upstream
-    fork:
-      name: apple/swift-cmark
+  - name: apple/swift-cmark
+    upstream:
+      name: commonmark/cmark
   - name: apple/swift-llbuild
     path: llbuild
   - name: swift-tools-support-core

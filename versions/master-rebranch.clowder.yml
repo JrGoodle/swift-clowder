@@ -2,20 +2,18 @@ name: swift-master-rebranch
 
 defaults:
   git:
-    recursive: true
+    submodules: true
 
-projects:
-  - name: llvm/llvm-project
-    remote: upstream
-    fork:
-      name: apple/llvm-project
-      branch: swift/master-rebranch
+clowder:
+  - name: apple/llvm-project
+    branch: swift/master-rebranch
+    upstream:
+      name: llvm/llvm-project
   - name: apple/swift
     branch: master-rebranch
-  - name: commonmark/cmark
-    remote: upstream
-    fork:
-      name: apple/swift-cmark
+  - name: apple/swift-cmark
+    upstream:
+      name: commonmark/cmark
   - name: apple/swift-llbuild
     path: llbuild
   - name: swift-tools-support-core

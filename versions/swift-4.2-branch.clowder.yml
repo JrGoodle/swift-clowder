@@ -3,19 +3,17 @@ name: swift-4.2
 defaults:
   branch: swift-4.2-branch
   git:
-    recursive: true
+    submodules: true
 
-projects:
-  - name: llvm/llvm-project
-    remote: upstream
-    fork:
-      name: apple/llvm-project
-      branch: swift/swift-4.2-branch
+clowder:
+  - name: apple/llvm-project
+    branch: swift/swift-4.2-branch
+    upstream:
+      name: llvm/llvm-project
   - name: apple/swift
-  - name: commonmark/cmark
-    remote: upstream
-    fork:
-      name: apple/swift-cmark
+  - name: apple/swift-cmark
+    upstream:
+      name: commonmark/cmark
   - name: apple/swift-llbuild
     path: llbuild
   - name: apple/swift-package-manager

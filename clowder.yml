@@ -3,50 +3,58 @@ name: swift-master
 defaults:
   protocol: https
   git:
-    recursive: true
+    submodules: recursive
 
-projects:
-  - name: llvm/llvm-project
-    remote: upstream
-    fork:
-      name: apple/llvm-project
+clowder:
+  swift:
+    - name: apple/llvm-project
       branch: swift/master
-  - name: apple/swift
-  - name: commonmark/cmark
-    remote: upstream
-    fork:
-      name: apple/swift-cmark
-  - name: apple/swift-llbuild
-    path: llbuild
-  - name: apple/swift-tools-support-core
-  - name: apple/swift-package-manager
-    path: swiftpm
-  - name: apple/swift-argument-parser
-    tag: '0.0.5'
-  - name: apple/swift-driver
-  - name: apple/swift-syntax
-  - name: apple/swift-stress-tester
-  - name: apple/swift-corelibs-xctest
-  - name: apple/swift-corelibs-foundation
-  - name: apple/swift-corelibs-libdispatch
-  - name: apple/swift-integration-tests
-  - name: apple/swift-xcode-playground-support
-  - name: ninja-build/ninja
-    branch: release
-  - name: unicode-org/icu
-    tag: release-65-1
-    groups: [linux, notdefault]
-  - name: jpsim/Yams
-    path: yams
-    tag: '3.0.1'
-  - name: KitWare/CMake
-    path: cmake
-    tag: v3.16.5
-    groups: [linux, notdefault]
-  - name: apple/indexstore-db
-  - name: apple/sourcekit-lsp
-  - name: apple/swift-format
-  - name: pvieito/PythonKit
-    path: pythonkit
-  - name: tensorflow/swift-apis
-    path: tensorflow-swift-apis
+      upstream: llvm/llvm-project
+    - name: apple/swift-llbuild
+      path: llbuild
+    - apple/swift
+    - apple/swift-tools-support-core
+    - apple/swift-driver
+    - apple/swift-syntax
+    - apple/swift-xcode-playground-support
+    - apple/indexstore-db
+    - apple/sourcekit-lsp
+    - apple/swift-format
+
+  swiftpm:
+    - name: apple/swift-package-manager
+      path: swiftpm
+    - name: apple/swift-argument-parser
+      tag: '0.0.5'
+
+  test:
+    - apple/swift-stress-tester
+    - apple/swift-integration-tests
+
+  corelibs:
+    - apple/swift-corelibs-xctest
+    - apple/swift-corelibs-foundation
+    - apple/swift-corelibs-libdispatch
+
+  third-party:
+    - name: tensorflow/swift-apis
+      path: tensorflow-swift-apis
+    - name: ninja-build/ninja
+      branch: release
+    - name: jpsim/Yams
+      path: yams
+      tag: '3.0.1'
+    - name: apple/swift-cmark
+      path: cmark
+      upstream: commonmark/cmark
+    - name: pvieito/PythonKit
+      path: pythonkit
+
+  linux:
+    groups: [notdefault]
+    projects:
+      - name: KitWare/CMake
+        path: cmake
+        tag: v3.16.5
+      - name: unicode-org/icu
+        tag: release-65-1
