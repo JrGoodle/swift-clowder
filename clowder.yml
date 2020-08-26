@@ -1,7 +1,8 @@
 name: swift-master
 
+protocol: https
+
 defaults:
-  protocol: https
   git:
     submodules: recursive
 
