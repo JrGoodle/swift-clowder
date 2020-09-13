@@ -3,7 +3,7 @@ name: swift-5.3
 defaults:
   branch: release/5.3
   git:
-    submodules: true
+    submodules: update recursive
 
 clowder:
   - name: apple/llvm-project

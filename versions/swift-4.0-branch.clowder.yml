@@ -3,7 +3,7 @@ name: swift-4.0
 defaults:
   branch: swift-4.0-branch
   git:
-    submodules: true
+    submodules: update recursive
 
 clowder:
   - name: apple/llvm-project
